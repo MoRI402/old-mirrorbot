@@ -41,7 +41,6 @@ def stats(update, context):
             f'<b>├  🎮 RAM : {memory}%</b>\n' \
             f'<b>├  💽 DISK : {disk}%</b>\n' \
             f'<b>│</b>\n' \
-            f'<b>╰──「 🚸 @AT_BOTS 🚸 」</b>'
     sendMessage(stats, context.bot, update)
 
 
@@ -51,14 +50,14 @@ def start(update, context):
 Hi {update.message.chat.first_name}, This bot can mirror all your links to Google drive!
 Type /{BotCommands.HelpCommand} to get a list of available commands
 '''
-    update.effective_message.reply_photo("https://telegra.ph/file/019996f816db9ed576cff.jpg", start_string, parse_mode=ParseMode.MARKDOWN)
+    update.effective_message.reply_photo("https://telegra.ph/file/03e477b9f42e1bbd70e4c.jpg", start_string, parse_mode=ParseMode.MARKDOWN)
 
 
 @run_async
 def repo(update, context):
     bot.send_message(update.message.chat_id,
     reply_to_message_id=update.message.message_id,
-    text="https://github.com/ayushteke/slam_aria_mirror_bot_HEROKU", disable_web_page_preview=false)
+    text="Hello there you can use me to mirror files to Gdrive", disable_web_page_preview=false)
 
 
 @run_async
